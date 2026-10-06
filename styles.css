@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    background-color: #252525;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+svg {
+    position: fixed;
+    left: 55%;
+    top: 180px;
+    transform: rotate(90deg) translate(-60%, 50%);
+}
+
+.target {
+  /* Говорит браузеру рассчитывать координаты относительно границ самого круга, а не всего SVG */
+  transform-box: fill-box;
+  transform-origin: center;
+}
